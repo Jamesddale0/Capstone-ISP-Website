@@ -302,12 +302,13 @@ select {
 }
 
 #display { 
-    box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);  
+    font-size: 23px;
+    text-align: center;
     height: 70px;
-    line-height: 70px;
-    padding: 16px 8px;
-    border-radius: 4px solid red;
-    color: green;
+    margin: 15px;
+    padding-left: 15px;
+    padding-right:15px;
+    border-radius: 4px;
 }
 
 button {

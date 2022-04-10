@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="calc_func.js"></script>
 </head>
 <body>
     <div class="header">
@@ -33,18 +32,18 @@
                     </p>
                 </div>
                 <div class="device_num_select">
-                    <select>
-                        <option value=""># of devices</option>
-                        <option value="">1 Device</option>
-                        <option value="">2 Devices</option>
-                        <option value="">3 Devices</option>
-                        <option value="">4 Devices</option>
-                        <option value="">5 Devices</option>
-                        <option value="">6 Devices</option>
-                        <option value="">7 Devices</option>
-                        <option value="">8 Devices</option>
-                        <option value="">9 Devices</option>
-                        <option value="">10+ Devices</option>
+                    <select id="device_list">
+                        <option value="0" selected="selected"># of devices</option>
+                        <option value="25">1 Device</option>
+                        <option value="50">2 Devices</option>
+                        <option value="75">3 Devices</option>
+                        <option value="100">4 Devices</option>
+                        <option value="125">5 Devices</option>
+                        <option value="150">6 Devices</option>
+                        <option value="175">7 Devices</option>
+                        <option value="200">8 Devices</option>
+                        <option value="225">9 Devices</option>
+                        <option value="250">10+ Devices</option>
                         </select>
                 </div>
             </div>
@@ -55,13 +54,13 @@
                     </p>
                 </div>
                     <div class="device_num_select">
-                        <select>
-                            <option value=""># of streams</option>
-                            <option value="">1 Stream</option>
-                            <option value="">2 Streams</option>
-                            <option value="">3 Streams</option>
-                            <option value="">4 Streams</option>
-                            <option value="">5+ Streams</option>
+                        <select id="stream_list">
+                            <option value="0"># of streams</option>
+                            <option value="25">1 Stream</option>
+                            <option value="50">2 Streams</option>
+                            <option value="100">3 Streams</option>
+                            <option value="200">4 Streams</option>
+                            <option value="350">5+ Streams</option>
                         </select>
                     </div>
             </div>
@@ -72,11 +71,11 @@
                     </p>
                 </div>
                     <div class="device_num_select">
-                        <select>
-                            <option value=""># of downloads</option>
-                            <option value="">Infrequent</option>
-                            <option value="">Regular</option>
-                            <option value="">Frequent</option>
+                        <select id="download_list">
+                            <option value="0GB"># of downloads</option>
+                            <option value="250GB">Infrequent</option>
+                            <option value="1TB">Regular</option>
+                            <option value="Unlimited">Frequent</option>
                         </select>
                 </div>
             </div>
@@ -88,10 +87,12 @@
                 </div>
                 <div id="display"></div>
                 <div class="calc_btn">
-                        <button type="button">Calculate</button>
+                        <button onclick ="deviceDropDown()">Calculate</button>
+
                 </div>
             </div>
         </main>
     </div>
+<script src="calc_func.js"></script>
 </body>
 </html>
